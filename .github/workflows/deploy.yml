@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: "22"
           cache: yarn
-      - run: yarn install --no-progress --frozen-lockfile
-      - run: yarn nuxt generate
+      # - run: yarn install --no-progress --frozen-lockfile
+      # - run: yarn nuxt generate
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./.output/public
